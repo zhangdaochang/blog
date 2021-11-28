@@ -16,4 +16,4 @@ console.log("这场和平星争夺战由我来做裁判！！！")
 
 
 
-![蜻蜓队长](E:\zhangdao\软件支持\blog\imgs\fd039245d688d43faa2231ae701ed21b0ff43be6.jpg)
+![蜻蜓队长](imgs/fd039245d688d43faa2231ae701ed21b0ff43be6.jpg)
