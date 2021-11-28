@@ -2,9 +2,29 @@
 
 ## html 认识
 
-html 是 lee 爵士发明的
+html 是 lee 爵士发明的 超文本标记语言
 
-html 应该首先写 <!DOCTYPE html>** 告诉浏览器我是html，请用html来解析我
+html 应该首先该写什么
+
+```html
+<!DOCTYPE html> <!--告诉浏览器我是html，请用html来解析我-->
+
+<html lang="zh-CN"> <!-- 设置语言为 中文简体 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置编码 utf-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- 告诉浏览器用最新内核-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 在手机上禁用缩放 -->
+    <title>Document</title> <!-- 标题 -->
+</head>
+
+<body>
+
+</body>
+
+</html>
+```
+
+
 
 ## 标签的几种形式
 
