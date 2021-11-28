@@ -58,7 +58,7 @@ git checkout x 切换分支
 
 相当于开了一个影分身
 
-![branch](.\imgs\branch.png)
+![branch](imgs\branch.png)
 
 
 
@@ -81,7 +81,7 @@ cat ~/.ssh/id_rsa.pub                           # 得到公钥内容
 
 把公钥放到github上
 
-![1638083304156](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\1638083304156.png)
+![1638083304156](\imgs\1638083304156.png)
 
 ## 远程常用操作
 
