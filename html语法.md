@@ -27,22 +27,22 @@ html 应该首先该写什么
 
 
 ## 标签的几种形式
+```bash
+<!DOCTYPE html> 告诉浏览器我是html，请用html来解析我
 
-**<!DOCTYPE html>** 告诉浏览器我是html，请用html来解析我
+<tag attr=value>内容</tag> 常规标签
 
-**<tag attr=value>内容</tag>** 常规标签
+<tag  attr>内容</tag>  input 标签的 checked 属性就是这样
 
-**<tag  attr>内容</tag>**  input 标签的 checked 属性就是这样
-
-**<tar attr=value>**   新版闭合应该这样写
-
+<tar attr=value>   新版闭合应该这样写
+```
 ## 细节
 
 大小写没区别
 
 双引号只有特殊符号在加 比如空格
 
-注释的写法：<!--我是注释-->
+注释的写法：`!--我是注释-->`
 
 ## 体系化学习
 
@@ -54,7 +54,6 @@ html 应该首先该写什么
 
 标准制定者是谁 比如 W3C lee 爵士
 
-&copy;  `&copy;  `
 
 ## 标签全局属性
 ```bash
