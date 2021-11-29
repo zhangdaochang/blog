@@ -1,5 +1,25 @@
 # HTML入门笔记1
 
+## server
+
+```bash
+yarn global add http-server # 安装 http-server
+
+# 使用
+http-server . -c-1 # .两边都有空格 表示在当前目录开服务， -c-1 表示不要缓存
+hs # 缩写
+
+# 使用
+yarn global add parcel # 安装 parcel
+
+parcel .
+
+```
+
+
+
+http-server . -c-1
+
 ## html 认识
 
 html 是 lee 爵士发明的 超文本标记语言
@@ -129,4 +149,3 @@ strong # 加粗 ...本质
 qoute # 引用
 blockquote # 另起一行的引用
 ```
-
