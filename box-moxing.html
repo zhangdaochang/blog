@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>盒模型</title>
+    
+</head>
+<body>
+    <pre>
+        <style contenteditable style="border: 3px solid red; display: block; width: 300px;height: 300px;">
+            .content-box{
+                margin: 20px;
+                box-sizing: content-box;
+                border: 5px solid red;
+                padding: 20px;
+                width: 200px;
+                height: 200px;
+            }
+            .border-box{
+                margin: 20px;
+                box-sizing: border-box;
+                border: 5px solid red;
+                padding: 20px;
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </pre>
+    <p>盒模型里包括 padding + border  + margin + content(自己设置的width)</p>
+    <p>content-box</p>
+    <p>padding*2 + border*2 +content</p>
+    <div class="content-box">
+        内容盒模型
+    </div>
+
+    <p>border-box</p>
+    <p>宽，高度：(content - padding*2 - border*2 ) + padding*2 + border*2</p>
+    <div class="border-box">
+        边框盒模型
+    </div>
+</body>
+</html>
