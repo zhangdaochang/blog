@@ -330,7 +330,7 @@ justify-content : flex-start | flex-end | center | space-between | space -around
 
 作用补充中间帧
 
-* transition 属性值 时长  过渡方式[transition-timing-function - CSS（层叠样式表） | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition-timing-function)  延迟多久开始  
+* transition 属性值 时长  过渡方式  [transition-timing-function - CSS（层叠样式表） | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition-timing-function)  延迟多久开始  
 
 不是所有属性都能补充帧
 
