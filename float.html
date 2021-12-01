@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>float</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        input,
+        button {
+            font-family: inherit;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both
+        }
+        body{
+            width: 1024px;
+            margin-left : auto;
+            margin-right : auto;
+        }
+    </style>
+    <style>
+        .my-navList{
+            margin-top: 9px;
+            float: left;
+        }
+        .my-navList > li {
+            float: left;
+            padding: 4px 0.5em;
+            font-size: 14px;
+        }
+        header{
+            margin-top: 30px;
+            height: 50px;
+        }
+
+        .user{
+            float: right;
+            margin-top: 9px;
+        }
+        .user > div{
+            float: left;
+            padding: 4px 0.5em;
+        }
+    </style>
+    <style>
+        main{
+            margin-top: 120px;
+        }
+        .serch{
+            min-height: 310px;
+            width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .serch > img{
+            display: block;
+            width:400px;
+            margin-left: auto;
+            margin-right:auto ;
+        }
+        .serch > form >div {
+            border:1px solid rgb(0, 162, 255);
+            margin-top: 40px;
+            border-radius: 18px;
+            overflow: hidden;
+
+        }
+        .serch > form > div > input {
+            float: left;
+            outline: none;
+            border: 0;
+            background: none;
+        }
+
+        .serch > form > div > input:first-child{
+            width: 638px;
+            height: 70px;
+            font-size: 1.2em;
+            padding: 14px 14px;
+        }
+        .serch > form > div > input:nth-child(2){
+            height: 70px;
+            width: 110px;
+            background-color: rgb(0, 162, 255);
+            padding: 4px 0.5em;
+            font-size: 1em;
+            color: white;
+        }
+    </style>
+    <style>
+        /* 滚动槽 */
+        .ad::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .ad::-webkit-scrollbar-track {
+            border-radius:10px;
+            background-image: -webkit-linear-gradient(90deg, #d2f7fa, #beffef, #f8d5fc)
+        }
+        /* 滚动条滑块 */
+        .ad::-webkit-scrollbar-thumb {
+            border-radius:10px;
+            background-image: -webkit-linear-gradient(90deg, #12c2e9, #c471ed, #f64f59)
+        }
+
+        .lalala{
+            margin-top: 40px;
+            color: rgb(27, 27, 27);
+        }
+        .news{
+            width: 450px;
+            float: left;
+            margin-left: 110px;
+            
+        }
+        .ad{
+            width: 350px;
+            float: right;
+            max-height: 260px;
+            overflow: auto;
+            margin-right: -30px;
+        }
+        .news > ol{
+            list-style: decimal;
+        }
+        .ad > ol{
+            list-style: decimal;
+            padding: 30px;
+        }
+        .news > ol > li{
+            
+            font-size: 1.2em;
+        }
+        .ad > ol > li{
+            
+            font-size: 1.2em;
+        }
+    </style>
+    <style>
+        .images > div{
+            margin-right: -68px;
+        }
+        .imgList{
+            float: left;
+            border: 1px solid aquamarine;
+            width: 150px;
+            background-color: azure;
+            height: 204px;
+            margin-right: 68px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="clearfix">
+            <ul class="my-navList clearfix">
+                <li>新闻</li>
+                <li>hao123</li>
+                <li>地图</li>
+                <li>直播</li>
+                <li>视频</li>
+                <li>贴吧</li>
+                <li>学术</li>
+                <li>更多</li>
+            </ul>
+            <div class="user clearfix">
+                <div>邯郸 ☀ 3℃ 优</div>
+                <div>设置</div>
+                <div>zhangdaochang</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="serch">
+            <img  src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="百度搜索">
+            <form action="/serch">
+                <div class="clearfix">
+                    <input name="search" type="text" placeholder="请输入要搜索的信息">
+                    <input type="submit" value="百度一下">
+                </div>     
+            </form>          
+        </div>
+        <div class="lalala clearfix">
+            <div class="news">
+                <ol>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                    <li>balabala 巴啦啦拉</li>
+                </ol>
+            </div>
+            <div class="ad">
+                <ol>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                    <li>苹果滞销，帮帮我们！！！</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="images">
+            <div class="clearfix">
+                <div class="imgList"></div>
+                <div class="imgList"></div>
+                <div class="imgList"></div>
+                <div class="imgList"></div>
+                <div class="imgList"></div>
+                <div class="imgList"></div>
+                <div class="imgList"></div>
+                <div class="imgList"></div>
+                <div class="imgList"></div>
+                <div class="imgList"></div>
+                <div class="imgList"></div>
+                <div class="imgList"></div>
+        </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

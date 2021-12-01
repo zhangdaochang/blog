@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>flex布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        input,
+        button {
+            font-family: inherit;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both
+        }
+    </style>
+    <style>
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        header div:first-child{
+            display: flex;
+            justify-content: center;
+            background-color: cadetblue;
+        }
+        header div:last-child{
+            display: flex;
+            align-items: center;
+            padding: 6px;
+            background-color: #fff;
+
+        }
+        header div:last-child > ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            color: #999;
+            width: 100%;
+        }
+        header div:last-child > ul > li:nth-child(2){
+            background-color: yellowgreen;
+            flex-grow: 2;
+        }
+        header div:last-child > ul > li:nth-child(3){
+            background-color: firebrick;
+            width: 200px;
+        }
+    </style>
+    <style>
+        .grow{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid blue;
+            margin-top: 4%;
+        }
+        .grow > div {
+            background-color: hotpink;
+            font-size: 1.3em;
+            border: 1px solid red;
+            padding: 10px;
+            height: 40px;
+        }
+        .grow > div:first-child{
+            width: 20%;
+        }
+        .grow > div:nth-child(2){
+            width: 40%;
+        }
+        .grow > div:nth-child(3){
+            width: 50%;
+        }
+        .grow > div:nth-child(4){
+            width: 60%;
+        }
+        .grow > div:nth-child(5){
+            width: 80%;
+        }
+    </style>
+    <style>
+        .imglist{
+            display: flex;
+            border: 1px solid green;
+            justify-content: center;
+        }
+        .imglist > div{
+            display: flex;
+            flex-wrap: wrap;  
+            min-width: 1000px;
+        }
+        .image{
+            height: 240px;
+            width: 240px;
+            background-color: black;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Flex布局</div>
+        <div>
+            <ul>
+                <li>菜单1</li>
+                <li>菜单2</li>
+                <li>菜单3</li>
+            </ul>
+        </div>
+    </header>
+    <div class="grow">
+        <div>20%</div>
+        <div>40%</div>
+        <div>50%</div>
+        <div>60%</div>
+        <div>80%</div>
+    </div>
+    <div class="imglist">
+        <div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </div>
+    <div></div>
+    <div></div>
+</body>
+</html>
