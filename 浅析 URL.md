@@ -8,7 +8,7 @@ internet protocol 是 IP
 
 从电信租用宽带。
 
-从 ip138.com 获取外网 ip
+从 ip138.com 获取自己分配到的外网 ip
 
 如果重启路由器可能会重新分配一个外网ip
 
@@ -20,7 +20,15 @@ internet protocol 是 IP
 
 路由器像一个转发器，有时候路由器也被叫做网关
 
-最大２５５
+最大255.255.255.255
+
+
+
+可以用 ping 命令 看百度的ip
+
+```bash
+ping www.baidu.com
+```
 
 
 
@@ -31,6 +39,8 @@ internet protocol 是 IP
 localhost 通过 hosts文件指向自己 `C:\Windows\System32\drivers\etc\hosts`文件
 
 0.0.0.0 不表示任何设备
+
+
 
 ## 端口 port
 
@@ -53,6 +63,11 @@ FTP 21 端口
 一个域名可以对应不同ip，这个叫做负载均衡
 
 一个 ip 可以对应不同域名， 这个叫共享主机
+
+1. com是顶级域名
+2. baidu.com 是二级域名（俗称一级域名）
+3. www.baidu.com 是三级域名 （俗称耳二级域名）
+4. 一级和二级域名 是父子关系
 
 
 
