@@ -74,3 +74,41 @@ ECMAScript 是 纸上的标准 ，JS  是浏览器的实现
 * 从此前端可以愉快的写后端应用了
 
 [JavaScript 的10个设计缺陷](http://www.ruanyifeng.com/blog/2011/06/10_design_defects_in_javascript.html)
+
+## JS 引擎
+
+编译
+
+优化
+
+执行
+
+垃圾回收
+
+
+
+## Stack 和 Heap 区别
+
+Stack 是顺序存放的
+
+Heap 是随机存放的
+
+数据分为两种：非对象和对象
+
+非对象都存在 Stack 区
+
+对象都存在 Heap 区
+
+= 号总是会把右边的内容复制到左边
+
+
+
+## JS的三座大山
+
+1. this
+2. 原型（ prototype）
+3. AJAX
+
+## 每个对象都有隐藏属性
+
+![3f467d0068847764b2cfc3d4ae8d2da](https://raw.githubusercontent.com/zhangdaochang/imagesBed/master/images/202112050001787.jpg)
