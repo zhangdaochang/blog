@@ -112,3 +112,4 @@ Heap 是随机存放的
 ## 每个对象都有隐藏属性
 
 ![3f467d0068847764b2cfc3d4ae8d2da](https://raw.githubusercontent.com/zhangdaochang/imagesBed/master/images/202112050001787.jpg)
+
