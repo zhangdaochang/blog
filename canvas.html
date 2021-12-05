@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>画板</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        input,
+        button {
+            font-family: inherit;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+    </style>
+    <style>
+        #canvas{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        canvas.height = window.innerHeight
+        canvas.width = window.innerWidth
+
+        const ctx = canvas.getContext('2d');
+
+        ctx.beginPath();
+        ctx.lineWidth = 7;
+        ctx.lineCap = "round";
+
+
+        let isTouchDevice = 'ontouchstart' in document.documentElement;
+
+        if (isTouchDevice){
+            canvas.style.background = 'red'
+            console.log('触摸设备')
+            let last = []
+            canvas.ontouchstart = (e) => {
+                console.log('start')
+                last = [e.touches[0].clientX,e.touches[0].clientY]
+            }
+            canvas.ontouchmove = (e) => {
+                ctx.moveTo(last[0], last[1]);
+                ctx.lineTo(e.touches[0].clientX,e.touches[0].clientY);
+                ctx.stroke();
+                last = [e.touches[0].clientX,e.touches[0].clientY]
+            }
+            
+        }else{
+            let onstart = false
+            let last = []
+            console.log('非触摸设备')
+            canvas.onmousedown = (e) => {
+                console.log('按下')
+                onstart = true
+                last = [e.clientX,e.clientY]
+                console.log(last)
+            }
+            canvas.onmousemove = (e) => {
+                if (onstart) {
+                    console.log('正在移动')
+                    ctx.moveTo(last[0], last[1]);
+                    ctx.lineTo(e.clientX, e.clientY);
+                    ctx.stroke();
+                    last = [e.clientX, e.clientY]
+                }
+            }
+            canvas.onmouseup = (e) => {
+                console.log('松开')
+                onstart = false
+            }
+
+        }
+    </script>
+</body>
+</html>
