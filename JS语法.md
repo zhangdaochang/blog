@@ -161,3 +161,100 @@ continue 跳出这一次循环
 // 把1 标记成foo
 ```
 
+
+
+## 数字与字符串
+
+数字就是数字 ，字符串就是字符串
+
+数字是用64位浮点数的形式储存的
+
+字符串是用类似 UTF8  形式储存的(UCS-2)
+
+## 数据类型
+
+1. number JS 的 number 全都是以小数（浮点数）的形式存储的，没有单独的整数
+
+2. string
+
+   ``` javascript
+   \' 表示 '
+   \" 表示 "
+   \n 表示 换行
+   \r 表示回车
+   \t 表示 tab 制表符
+   \\ 表示 \
+   \uFFFF 表示对应的 Unicode 字符
+   \xFF 表示前 256 个 Unicode 字符
+   `it 's ok` "it 's ok" 'it "s ok' 特殊组合转义
+   ```
+
+   
+
+3. bool falsy 值 ：0 NAN '' undefined null
+
+4. symbol  生成一个全局唯一的值。
+
+5. undefined
+
+6. null
+
+7. object
+
+8. bitint  [MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
+
+## 类型转换
+
+[类型转换 · JavaScript 秘密花园 -)](https://www.javascriptc.com/books/javascript-garden/types/casting.html)
+
+
+
+## 变量声明
+
+变量声明的时候同时指定了类型。
+
+`var | let | const`
+
+var : 过时的，不好用的方式
+
+let : 更合理的方式
+
+```javascript
+// 只作用于块内
+{
+    let b =1
+    console.log(b) //1
+}
+console.log(b)//  b is not defined
+// 不能重复声明
+{
+    let a = 2
+    let a = 1
+}
+//VM581:3 Uncaught SyntaxError: Identifier 'a' has already been declared
+// 声明赋值不赋值都行
+{
+    let a
+}
+// 不能在为声明之前使用
+{
+    console.log(b)
+    let b = 1
+}
+// Cannot access 'b' before initialization
+
+// 全局声明let 不会变成 window 属性
+let bbb = 3
+
+window.bbb
+undefine
+```
+
+
+
+const : 声明时必须赋值，不能再改。和常量的意思一样
+
+
+
+**写代码推荐使用 let 和 const  不许用 var**
+
