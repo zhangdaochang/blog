@@ -11,7 +11,7 @@
                         <key>kind</key>
                         <string>software-package</string>
                         <key>url</key>
-                        <string>https://github.com/zhangdaochang/blog/raw/86cf8b0c07a8358ddae48b96673b8951cc72b778/package.ipa</string>
+                        <string>https://raw.githubusercontent.com/zhangdaochang/blog/master/package.ipa</string>
                     </dict>
                     <dict>
                         <key>kind</key>
