@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string><![CDATA[https://cdn.yayast.com/data/attachment/81f7d9f353e7de6961ac01e3f4237fae.ipa?_upt=7673a9a01671184832]]></string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>needs-shine</key>
+					<integer>0</integer>
+					<key>url</key>
+					<string><![CDATA[https://ff.toibuys.com/data/image/app/2022/12/14/54e61db9960b31d108c07e0cf1631bf3.png?v=1671182432]]></string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>needs-shine</key>
+					<true/>
+					<key>url</key>
+					<string><![CDATA[https://ff.toibuys.com/data/image/app/2022/12/14/54e61db9960b31d108c07e0cf1631bf3.png?v=1671182432]]></string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.hegu.dnf.bxytest</string>
+				<key>bundle-version</key>
+				<string><![CDATA[1.0]]></string>
+				<key>kind</key>
+				<string>software</string>				
+				<key>title</key>
+				<string><![CDATA[阿拉德(注册邀请码:yy66)]]></string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
